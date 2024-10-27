@@ -27,4 +27,4 @@ if __name__ == "__main__":
     display_kora_logo()
     start_facebook_bot()
    
-    debug=true,host='0.0.0.0',port=3000
+    
