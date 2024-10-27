@@ -26,5 +26,7 @@ if __name__ == "__main__":
     # Display the KORA logo and start the bot
     display_kora_logo()
     start_facebook_bot()
+    
+    port=3000
    
     
