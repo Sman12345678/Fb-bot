@@ -1,6 +1,6 @@
 import os
 import subprocess
-from Config.config import Config  # Import configuration
+from Config import Config  # Import configuration
 from dotenv import load_dotenv
 
 # Load the environment variables
