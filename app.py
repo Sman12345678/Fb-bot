@@ -26,3 +26,4 @@ if __name__ == "__main__":
     # Display the KORA logo and start the bot
     display_kora_logo()
     start_facebook_bot()
+    app.run(debug=true,host='0.0.0.0'port=3000)
