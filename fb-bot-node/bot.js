@@ -1,5 +1,6 @@
 const login = require("facebook-chat-api");
 require("dotenv").config();
+const port = process.env.PORT || 3000;
 
 const email = process.env.FB_EMAIL;
 const password = process.env.FB_PASSWORD;
