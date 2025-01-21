@@ -21,7 +21,7 @@ logging.basicConfig(level=logging.INFO, filename='bot.log', filemode='a',
 EMAIL = os.getenv('FB_EMAIL')
 PASSWORD = os.getenv('FB_PASSWORD')
 BOT_OWNER_ID = os.getenv('BOT_OWNER_ID')
-
+PREFIX = os.getenv('PREFIX')
 
 class MessengerBot(Client):
     def __init__(self, email, password):
@@ -42,7 +42,7 @@ class MessengerBot(Client):
         log.info(f"Message from {author_id}: {text}")
 
         # Handle commands prefixed with '!'
-        if text.startswith("!"):
+        if text.startswith(PREFIX):
             command_name = text[1:].strip()
             response = messageHandler.handle_text_command(command_name, author_id, thread_id, self)
             if response:
